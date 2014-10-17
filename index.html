@@ -1,0 +1,23 @@
+<html>
+  <head>
+    <script>
+      var host = location.origin.replace(/^http/, 'ws')
+      var ws = new WebSocket(host);
+      ws.onmessage = function (event) {
+        document.body.style.background = JSON.parse(event.data);
+        console.log(JSON.parse(event.data));
+      }
+      document.onkeypress = function (e) {
+        e = e || window.event;
+        var msg = {
+          type: "message",
+          text: "interrupt!",
+          date: Date.now()
+        };
+        ws.send(JSON.stringify(msg));
+      }
+    </script>
+  </head>
+  <body>
+  </body>
+</html>
