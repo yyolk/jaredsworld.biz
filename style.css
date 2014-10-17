@@ -6,7 +6,7 @@ body {
 
 h1 {
   margin: 0;
-  font  : 30vw 'Gochi Hand', cursive;
+  font  : 12vw 'Gochi Hand', cursive;
   color : rgba(0,255,128,.9); 
   text-align    : center;
   text-transform: capitalize;

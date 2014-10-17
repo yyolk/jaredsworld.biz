@@ -7,7 +7,9 @@
   </head>
   <body>
 	<h1 id="jw">JAREDS WORLD</h1>
-  </body>
+  <script>
+  window.fitText( document.getElementById("jw") );
+  </script>
   <script>
   var host = location.origin.replace(/^http/, 'ws')
   var ws = new WebSocket(host);
@@ -19,4 +21,5 @@
   console.log(JSON.parse(event.data));
   }
   </script>
+  </body>
 </html>
