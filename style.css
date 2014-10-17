@@ -9,7 +9,7 @@ body {
 }
 h1 {
   margin: 0;
-  font  : 300% 'Gochi Hand', cursive;
+  font  : 200px 'Gochi Hand', cursive;
   color : rgba(0,255,128,.9); 
   text-align    : center;
   text-transform: capitalize;
