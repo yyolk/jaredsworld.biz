@@ -3,7 +3,10 @@ body {
   background: #000;
   text-align: center;
 }
-
+.full {
+  width: 80%;
+  margin: 0 auto;
+}
 h1 {
   margin: 0;
   font  : 20vw 'Gochi Hand', cursive;
