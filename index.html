@@ -3,16 +3,20 @@
     <link href='http://fonts.googleapis.com/css?family=Gochi+Hand' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" href="/style.css">
 
-    <script>
-      var host = location.origin.replace(/^http/, 'ws')
-      var ws = new WebSocket(host);
-      ws.onmessage = function (event) {
-        document.body.style.background = JSON.parse(event.data);
-        console.log(JSON.parse(event.data));
-      }
-    </script>
+
   </head>
   <body>
-	<h1> JAREDS WORLD </h1>
+	<h1 id="jw">JAREDS WORLD</h1>
   </body>
+  <script>
+  var host = location.origin.replace(/^http/, 'ws')
+  var ws = new WebSocket(host);
+  var c;
+  ws.onmessage = function (event) {
+  c = JSON.parse(event.data);
+  document.body.style.background = c;
+  document.getElementById('jw').style.color = c;
+  console.log(JSON.parse(event.data));
+  }
+  </script>
 </html>
