@@ -15,8 +15,9 @@
   window.fitText( document.getElementById("jw"), 0.4 );
   </script>
   <script>
-  var host = location.origin.replace(/^http/, 'ws')
-  var ws = new WebSocket(host);
+  // var host = location.origin.replace(/^http/, 'ws')
+  // var ws = new WebSocket(host);
+  var ws = new WebSocket('ws://jaredsworld-biz.herokuapp.com');
   var c;
   ws.onmessage = function (event) {
   c = JSON.parse(event.data);
