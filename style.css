@@ -39,11 +39,11 @@ h1 {
                24px 24px 0 #4e4eff,
                25px 25px 0 #6868ff;
   
-  -webkit-animation:all 2s ease-in-out infinite alternate;
-     -moz-animation:all 2s ease-in-out infinite alternate;
-      -ms-animation:all 2s ease-in-out infinite alternate;
-       -o-animation:all 2s ease-in-out infinite alternate;
-          animation:all 2s ease-in-out infinite alternate;
+  -webkit-animation:all 0.5s ease-in-out infinite alternate;
+     -moz-animation:all 0.5s ease-in-out infinite alternate;
+      -ms-animation:all 0.5s ease-in-out infinite alternate;
+       -o-animation:all 0.5s ease-in-out infinite alternate;
+          animation:all 0.5s ease-in-out infinite alternate;
 }
 
 @-webkit-keyframes all {
